@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/chestionare-permis-port-arma/static/js/main.ae1fa499.js",
+    "main.js": "/chestionare-permis-port-arma/static/js/main.b011bc01.js",
     "static/js/989.5a120fa1.js": "/chestionare-permis-port-arma/static/js/989.5a120fa1.js",
     "index.html": "/chestionare-permis-port-arma/index.html",
     "serve.json": "/chestionare-permis-port-arma/serve.json",
     "manifest.json": "/chestionare-permis-port-arma/manifest.json",
-    "main.ae1fa499.js.map": "/chestionare-permis-port-arma/static/js/main.ae1fa499.js.map",
+    "main.b011bc01.js.map": "/chestionare-permis-port-arma/static/js/main.b011bc01.js.map",
     "989.5a120fa1.js.map": "/chestionare-permis-port-arma/static/js/989.5a120fa1.js.map"
   },
   "entrypoints": [
     "static/js/989.5a120fa1.js",
-    "static/js/main.ae1fa499.js"
+    "static/js/main.b011bc01.js"
   ]
 }
