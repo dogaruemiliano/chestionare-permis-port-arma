@@ -34,6 +34,7 @@ const App = () => {
         });
         const data = await response.json();
         setToken(data.token);
+        console.log(`token: ${token}`);
         AsyncStorage.setItem("token", data.token);
       } catch (error) {
         console.error(error);
@@ -43,7 +44,6 @@ const App = () => {
     if (!token) {
       fetchGuestToken();
     }
-    console.log(`token: ${token}`);
   }, [token]);
 
   return (
