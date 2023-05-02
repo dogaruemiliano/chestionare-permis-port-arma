@@ -1,0 +1,7 @@
+{
+  "display": "standalone",
+  "lang": "en",
+  "name": "SelfTestingApp",
+  "short_name": "SelfTestingApp",
+  "start_url": "/?utm_source=web_app_manifest"
+}
