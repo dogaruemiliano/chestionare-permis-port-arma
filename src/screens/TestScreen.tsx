@@ -13,6 +13,7 @@ import AnswerButton from "../components/AnswerButton";
 const TestScreen: React.FC<{ token: string }> = props => {
   const { token } = props;
   // const {navigation} = props;
+  const [isLoading, setIsLoading] = useState(true);
   const [test, setTest] = useState<Test | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentChosenAnswer, setCurrentChosenAnswer] = useState<string | null>(
@@ -42,6 +43,7 @@ const TestScreen: React.FC<{ token: string }> = props => {
           })),
         }));
         setTest(testData);
+        setIsLoading(false);
       } catch (error) {
         console.error(error);
       }
@@ -55,7 +57,9 @@ const TestScreen: React.FC<{ token: string }> = props => {
   if (!test) {
     return (
       <View style={styles.screen}>
-        <Text>Error! No test...</Text>
+        <View style={styles.centered}>
+          <Text>Error! No test...</Text>
+        </View>
       </View>
     );
   }
@@ -108,9 +112,14 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: UI.padding,
-    // justifyContent: "center",
+    justifyContent: "center",
     alignItems: "center",
     backgroundColor: colors.background,
+  },
+  centered: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   questionContainer: {
     flex: 1,
