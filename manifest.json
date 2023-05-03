@@ -1,7 +1,7 @@
 {
   "display": "standalone",
   "lang": "en",
-  "name": "SelfTestingApp",
-  "short_name": "SelfTestingApp",
+  "name": "Teste Arme si Munitii",
+  "short_name": "Teste Arme si Munitii",
   "start_url": "/?utm_source=web_app_manifest"
 }
